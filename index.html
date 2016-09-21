@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/canvas.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/shape.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="meau">
+            <ul>
+                <li style="background: #1A321C;color:#fff">文件</li>
+                <li>绘制图形</li>
+                <li>绘制类型</li>
+                <li>线框宽度</li>
+                <li>线框颜色</li>
+                <li>填充颜色</li>
+                <li class="last">橡皮擦</li>
+            </ul>
+        </div>
+        <div class="xuanxiang">
+            <ul class="opation" style="display: block;">
+                <li class="new">新建</li>
+                <li class="back">返回</li>
+                <li class="file">保存</li>
+            </ul>
+            <ul class="opation">
+                <li data-role="line">直线</li>
+                <li data-role="rect">矩形</li>
+                <li data-role="arc">圆</li>
+                <li data-role="bian">多边形</li>
+                <li data-role="jiao">多角形</li>
+                <li data-role="pen">画笔</li>
+            </ul>
+            <ul class="opation">
+                <li data-role="stroke">线框</li>
+                <li data-role="fill">填充</li>
+            </ul>
+            <ul class="opation">
+                <input type="number" placeholder="请输入画笔粗细">
+            </ul>
+            <ul class="opation">
+                <input type="color">
+            </ul>
+            <ul class="opation">
+                <input type="color">
+            </ul>
+            <ul class="opation">
+                <input type="number" placeholder="请输入橡皮大小">
+            </ul>
+
+        </div>
+        <div class="canvas">
+            <canvas width="770" height="346">您的浏览器不支持画板</canvas>
+            <div class="copy"></div>
+            <div class="xp"></div>
+        </div>
+    </div>
+</body>
+</html>
